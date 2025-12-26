@@ -1,6 +1,6 @@
 {
-  "include": ["**/*.ts", "**/*.tsx"],
-  "exclude": ["e2b-templates/**/*"],
+  "include": ["src"],
+  "exclude": ["node_modules", "dist", "build", "e2b-templates"],
   "compilerOptions": {
     "target": "ES2022",
     "jsx": "react-jsx",
@@ -29,7 +29,7 @@
     "strictNullChecks": true,
     
     "paths": {
-      "@/*": ["./src/*"],
+      "@/*": ["./src/*"]
     }
   }
 }
